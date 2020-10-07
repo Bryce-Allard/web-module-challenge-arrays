@@ -65,14 +65,14 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(){
-   if (originalFlavors.length = 31){
-    return 'true';
-   } else {
-       return 'false';
-   }
-    
+function is31Flavors(arr){
+  if (arr.length = 31)
+    return true
+else
+return false
 }
+    
+
 // console.log(is31flavors);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 

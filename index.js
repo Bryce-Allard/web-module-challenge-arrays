@@ -88,11 +88,15 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(newFlavor, arr){
-   arr.unshift('Rainbow Sherbert');
-   return arr;
+function addFlavor(arr, str){
+    arr.unshift(str);
+    console.log(arr);
+    return arr;
+//    arr.unshift('Rainbow Sherbert');
+//    return arr;
 }
-console.log(addFlavor('Rainbow Sherbert', originalFlavors));
+// console.log(addFlavor('Rainbow Sherbert', originalFlavors));
+addFlavor(originalFlavors, 'Rainbow Sherbert');
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -106,10 +110,12 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(removeFlavor, arr){
-   originalFlavors.pop();
+function removeLastFlavor(arr){
+    arr.pop();
+    return arr;
 }
 console.log(removeLastFlavor(originalFlavors));
+// console.log(arr());
 
 
 
@@ -123,10 +129,11 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(arr, index){
+    return arr[index];
 }
-
+getFlavorByIndex(originalFlavors, 0);
+// console.log(originalFlavors[0]);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
@@ -142,9 +149,9 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
-}
+// function removeFlavorByName(arr, str){
+//     for(let i = 0; i < arr.length; i++)
+// }
 
 
 
